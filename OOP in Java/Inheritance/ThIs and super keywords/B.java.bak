@@ -1,0 +1,25 @@
+class A{
+	int a = 12;
+	int b = 13;
+}
+class B extends A
+{
+	int a = 34;
+	int b = 45;
+	public void display(){
+		System.out.println("This Sub Class Value of a: "+this.a);
+		System.out.println("This Sub Class Value of b: "+this.b);
+	}
+	public void supermethod(){
+		System.out.println("This is Super or Parent Class value of a: "+super.a);
+		System.out.println("This is Super or Parent Class value of b: "+super.b);
+	}
+	public static void main(String[] args) 
+	{
+		B b = new B();
+		System.out.println(b.a);
+		b.display();
+		System.out.println("--------------------------")
+		b.supermethod();
+	}
+}
